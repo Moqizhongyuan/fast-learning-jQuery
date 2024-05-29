@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="../js/jquery.min.js"></script>
+  <body>
+    <div class="root">
+      <div class="target">这是一个目标元素</div>
+      <hr />
+      <div class="remove">要移除的内容</div>
+      <div class="empty">要清空但不移除的内容</div>
+      <div>要保留的内容</div>
+      <button onclick="remove()">移除</button>
+      <button onclick="empty()">清空</button>
+      <hr />
+      <div class="target2">
+        <div>附带节点</div>
+        这是另一个目标元素
+        <div>附带节点</div>
+      </div>
+      <div id="source">这是一个可移动元素</div>
+      <button onclick="apTo()">appendTo</button>
+      <button onclick="preTo()">prependTo</button>
+      <button onclick="inAf()">insertAfter</button>
+      <button onclick="inBe()">insertBefore</button>
+      <hr />
+      <div class="target3">这是一个要被替换的元素</div>
+      <button id="replace" onclick="repW()">替换</button>
+    </div>
+    <script src="../js/操作dom元素.js"></script>
+  </body>
+</html>

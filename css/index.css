@@ -1,0 +1,8 @@
+.highlight {
+  color: red;
+}
+
+[data="456"] {
+  font-size: 40px;
+  color: blue;
+}

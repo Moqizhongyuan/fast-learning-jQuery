@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="../js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/index.css" />
+  <body>
+    <div class="root">
+      <div>正常元素</div>
+      <div class="highlight">高亮元素</div>
+      <hr />
+      <div id="highlight">这是一个由jQuery加上highlight的元素</div>
+      <hr />
+      <div id="rhighlight" class="highlight">
+        这是一个由jQuery移除highlight的元素
+      </div>
+      <hr />
+      <div class="togg">
+        <div class="to">item1</div>
+        <div class="to">item2</div>
+        <div class="to">item3</div>
+        <div class="to highlight">item4</div>
+        <div class="to">item5</div>
+        <button onclick="togg()">转换（toggle）</button>
+      </div>
+      <hr />
+      <div class="attr">
+        <div data="123">这是一个属性为[data="123"]的元素</div>
+        <div data="456">这是一个属性为[data="456"]的元素</div>
+        <button onclick="changeAttr()">修改[data="123"]为[data="456"]</button>
+        <button onclick="removeAt()">移除data属性</button>
+      </div>
+      <hr />
+      <div class="val">
+        <input type="number" id="myInput" />
+        <button onclick="double()">将输入数据乘2</button>
+      </div>
+      <div class="text">
+        <div id="myEl">
+          默认文本
+          <div>附带文本</div>
+        </div>
+
+        <button onclick="changeText()">修改文本</button>
+      </div>
+      <div class="html">
+        <div class="root2">
+          <div id="myEl">默认div</div>
+        </div>
+        <button onclick="changeH()">用html()修改默认div</button>
+      </div>
+    </div>
+    <script src="../js/dom操作.js"></script>
+  </body>
+</html>

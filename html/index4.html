@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="../js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../css/index2.css" />
+  <body>
+    <div class="root">
+      <div class="all">
+        这是点击div的父元素
+        <br />
+        <br />
+        <div class="click">
+          这是一个监听了事件点击的按钮，点击文字背景就会变色
+        </div>
+        <!-- <div class="another">这是另一个div子元素</div> -->
+      </div>
+      <button id="cl">监听点击</button>
+      <button onclick="removeListener()">解除监听</button>
+
+      <hr />
+      <div class="box">
+        这是一个div盒子,点击返回相应的点击坐标,坐标相对于div
+      </div>
+    </div>
+    <script src="../js/事件处理.js"></script>
+  </body>
+</html>
